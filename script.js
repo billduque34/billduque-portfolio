@@ -20,14 +20,16 @@ function toggleNav() {
 
 nav.addEventListener('click',toggleNav);
 
-const skills = ['#html5','#css3','#js','#react','#redux','#ps','#java','#git','#sass'];
+const skills = ['#html5','#css3','#js','#react','#redux','#ps','#java','#git','#sass','#mocha','#chrome'];
 const paragraphSkill = ['Has a strong knowledge on using semantic HTML and can create an accessible website with HTML. Also knowledgeable about the common structure, forms, elements of HTML.',
 'Has a strong knowledge about the common properties of CSS. Can create different layout using Grid and Flexbox. Can also create animations and transitions using CSS.',
 'Has a strong knowledge about JavaScript from the basics of JavaScript to async-await functions, classes and modules. Knows how to manipulate DOM.',
 'React','Redux','Has a little knowledge about Photoshop. Can edit photos and can make images a png file.',
 'Has a decent knowledge about Java, from the basics to the four OOP concepts. Can create an efficient code with less time complexity using the right data structure. Also knows dynamic programming like memoization.',
 'Has a decent knowledge about Git. Can push commits from local to remote repository. Knows to create another branch before merging different version to main branch.',
-'Has a decent knowledge about Sass. It improves the readability of a CSS file and is more flexible than CSS.'];
+'Has a decent knowledge about Sass. It improves the readability of a CSS file and is more flexible than CSS.',
+'Has a decent knowledge about Mocha JS. I used Mocha.JS for testing JavaScript code functionality with the combination of Chai assert method.',
+'Has a decent knowledge about Chrome DevTools. I mostly used this for debugging HTML and CSS, and for checking the breakpoint to help my website become responsive. I can also manipulate DOM temporarily.'];
 
 let outputParagraph = document.querySelector('#output');
 const skillButtons = [];
