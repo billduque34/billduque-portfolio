@@ -1,6 +1,10 @@
 @font-face {
     font-family: "Master Of Comics";
-    src: url(resources/font/master-of-comics.ttf) format('truetype');
+    src: url(resources/font/Gold\ Girls.ttf) format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -16,6 +20,7 @@ body {
 a {
     text-decoration: none;
     color: rgb(255,253,208);
+    cursor: pointer;
 }
 
 header {
@@ -165,6 +170,7 @@ main {
     font-weight: bold;
     font-size: 1rem;
     transition: 200ms ease-out;
+    cursor: pointer;
 }
 
 .cell button:hover {
@@ -175,7 +181,7 @@ main {
 }
 
 /* My Website Section */
-.my-website {
+#my-website {
     position: relative;
     z-index: 0;
     display: flex;
@@ -184,7 +190,7 @@ main {
     background-image: url("resources/vice-city-background.png");
 }
 
-.my-website::before {
+#my-website::before {
     content: '';
     background: linear-gradient(to top,rgb(253, 119, 220),rgba(255, 213, 75, 0.76));
     opacity: .99;
@@ -196,17 +202,17 @@ main {
     z-index: 1;
 }
 
-.my-website:hover::before {
+#my-website:hover::before {
     background: linear-gradient(to top,rgb(253, 119, 220),rgba(1, 12, 77, 0.699));
 }
 
-.my-website:hover .web img {
+#my-website:hover .web img {
     box-shadow: 0px 0px 90px rgb(0, 247, 255);
 }
 
-.my-website h2 {
+#my-website h2 {
     font-family: "Master Of Comics";
-    font-size: 3.2rem;
+    font-size: 4rem;
     letter-spacing: .1em;
     color: rgb(82, 226, 252);
     -webkit-text-stroke: .5px rgb(255, 130, 238);
@@ -262,6 +268,7 @@ main {
     height: 300px;
     z-index: 1;
     box-shadow: 0px 0px 90px rgb(247, 140, 0);
+    cursor: pointer;
 }
 
 .web-name {
@@ -386,6 +393,54 @@ main {
 .skill img{
     width: 60%;
     height: 60%;
+    cursor: pointer;
+}
+
+/* Contact Me Footer */
+footer {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    width: 100%;
+    color: rgb(255,253,208);
+    background-color: #0C0C0C;
+}
+
+.contact {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: 'Kanit';
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgb(255,253,208);
+}
+
+.social-link-footer, .section-footer {
+    margin-bottom: 40px;
+}
+
+.social-link-footer label{
+    font-size: 1.5rem;    
+    margin-left: 15px;
+}
+
+.section-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-footer .section-name {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.section-footer span {
+    margin-bottom: 7px;
 }
 
 @media only screen and (max-width: 1266px) {
@@ -476,6 +531,10 @@ main {
     .output-screen {
         height: 290px;
     }
+
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -526,6 +585,10 @@ main {
 }
 
 @media only screen and (max-width: 360px) {
+    #my-website h2 {
+        font-size: 3rem;
+    }
+
     .web img {
         height: 160px;
     }
@@ -548,6 +611,15 @@ main {
     }
 
     #output {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .contact {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        font-size: 1rem;
+        font-family: 'Kanit';
     }
 }

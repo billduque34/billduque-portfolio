@@ -19,9 +19,9 @@
             <span>Portfolio</span>
             <p><i class="fa fa-bars"></i></p>
             <div class="navigation">
-                <span><a href="">My Websites</a></span>
-                <span><a href="">About Me</a></span>
-                <span><a href="">Contact Me</a></span>
+                <span><a href="#my-website">My Websites</a></span>
+                <span><a href="#about-me">About Me</a></span>
+                <span><a href="#contact-me">Contact Me</a></span>
             </div>
         </nav>
         <div class="nav-mobile">
@@ -43,11 +43,13 @@
             <button>Download Resume</button>
         </div>
     </main>
-    <section class="my-website">
-       <h2>My Websites</h2>
+    <section id="my-website">
+       <h2>My Projects</h2>
        <div class="websites">
         <div class="web">
-            <img src="resources/next-web-img.jpg" alt="">
+            <a href="https://billduque34.github.io/billduque34-next.github.io/">
+                <img src="resources/next-web-img.jpg" alt="">
+            </a>
             <span class="web-name">NEXT Website</span>
             <div class="web-description">
                 <p>Next website is created with guidance of a Youtube video.
@@ -61,7 +63,9 @@
             </div>
         </div>
         <div class="web">
-            <img src="resources/contis-web-img.jpg" alt="">
+            <a href="https://billduque34.github.io/billduque-proto.github.io/">
+                <img src="resources/contis-web-img.jpg" alt="">
+            </a>
             <span class="web-name">Conti's Mock Website</span>
             <div class="web-description">
                 <p>This is a mock website about Conti's Restaurant. "What's new" and
@@ -75,7 +79,9 @@
             </div>
         </div>
         <div class="web">
-            <img src="resources/nike-web-img.jpg" alt="">
+            <a href="https://billduque34.github.io/nike-landing.github.io/">
+                <img src="resources/nike-web-img.jpg" alt="">
+            </a>
             <span class="web-name">Nike Landing Page</span>
             <div class="web-description">
                 <p>This is a mock Nike "Back to the Future" landing page. Nike Air Mag and 
@@ -87,14 +93,62 @@
                 </div>
             </div>
         </div>
+        <div class="web">
+            <a href="https://billduque34.github.io/mini-piano.github.io/">
+                <img src="resources/nike-web-img.jpg" alt="">
+            </a>
+            <span class="web-name">Piano Player</span>
+            <div class="web-description">
+                <p>Interactive little piano created using vanilla Javascript.<br><br>
+                </p>
+                <div class="language">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JAVASCRIPT</span>
+                </div>
+            </div>
+        </div>
+        <div class="web">
+            <a href="http://raspy-smile.surge.sh/">
+                <img src="resources/nike-web-img.jpg" alt="">
+            </a>
+            <span class="web-name">Jammming</span>
+            <div class="web-description">
+                <p>Used Spotify API to fetch tracks, create playlist
+                    and post playlist in your Spotify. Log your spotify account in Spotify app.
+                </p>
+                <div class="language">
+                    <span>REACT</span>
+                </div>
+            </div>
+        </div>
+        <div class="web">
+            <a href="https://cocky-ride-e97de3.netlify.app/">
+                <img src="resources/nike-web-img.jpg" alt="">
+            </a>
+            <span class="web-name">Reddit Mini</span>
+            <div class="web-description">
+                <p>Simple Reddit Single Page Application. Used Reddit API to fetch data needed 
+                    for the application. (New features will be added)
+                </p>
+                <div class="language">
+                    <span>REACT</span>
+                    <span>REDUX</span>
+                </div>
+            </div>
+        </div>
        </div> 
     </section>
     <section id="about-me">
         <div class="story">
             <h2>About Me</h2>
-            <p>I am Bill Duque, an aspiring Front-end Developer. I graduated in Cavite State University - Silang Campus
+            <p> I am Bill Duque, an aspiring Front-end Developer. I graduated in Cavite State University - Silang Campus
                 with a degree in Bachelor of Science in Information Technology. I am a creative and competent person. I can 
-                create a website that fits to the needs of a person or company. 
+                create a website that fits to the needs of a person or company.</p>
+            <p>I have strong knowledge about Front-end development. I can create a website that is responsive and accessible.
+                I have a knowledge on creating a wireframe before converting it to a prototype website. I know a lot of things about
+                text design, color design and typography. I also have the knowledge about Unit testing mostly Test-Driven Development. I also know
+                how to use browser and Third-party API. I know how to publish static website and React App in Github Pages and Netlify.
             </p>
         </div>
         <div class="knowledge">
@@ -139,8 +193,40 @@
                     <img src="resources/sass-logo-port.png" alt="" id="sass">
                     <span>Sass</span>
                 </div>
+                <div class="skill">
+                    <img src="resources/mocha-logo-port.png" alt="" id="mocha">
+                    <span>Mocha</span>
+                </div>
+                <div class="skill">
+                    <img src="resources/chrome-logo-port.png" alt="" id="chrome">
+                    <span>DevTools</span>
+                </div>
+                <div class="skill">
+                    <img src="resources/chrome-logo-port.png" alt="" id="jest">
+                    <span>Jest</span>
+                </div>
             </div>
         </div>
     </section>
+    <footer id="contact-me">
+        <div class="contact">
+            <div class="social-link-footer">
+                <label for="github"><i class="fab fa-github"></i></label>
+                <label for="linkedin"><i class="fab fa-linkedin"></i></label>
+                <label for="google"><i class="fab fa-google"></i></label>
+            </div>
+            <div class="section-footer">
+                <span class="section-name">EXPLORE</span>
+                <span><a href="#my-website">My Websites</a></span>
+                <span><a href="#about-me">About Me</a></span>
+            </div>
+            <div class="section-footer">
+                <span class="section-name">CONNECT</span>
+                <span><a href="mailto:billduque34@gmail.com">billduque34@gmail.com</a></span>
+                <span>259 Brgy. Loma, Amadeo, Cavite</span>
+                <span>+63 995 847 8039</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
