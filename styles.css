@@ -383,6 +383,7 @@ main {
 }
 
 .skill {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -394,6 +395,7 @@ main {
     border-right: 3px solid black;
     border-bottom: 3px solid black;
     font-size: 1.9rem;
+    padding: 15px;
 }
 
 .skill:hover {
@@ -404,13 +406,21 @@ main {
     border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-.skill:hover > img {
+.skill:hover > a img {
     transform: scale(0.98);
 }
 
-.skill img{
-    width: 60%;
-    height: 60%;
+.skill a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.skill a img{
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
